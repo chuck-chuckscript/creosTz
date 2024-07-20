@@ -1,0 +1,53 @@
+
+$lightColor: #383838;
+$lightBg: #bdbdbd;
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    .header h2{
+      color: #383838;
+    }
+    .comment{
+      background-color: $lightBg;
+    }
+    .custom_tooltip{
+      color: white;
+      background-color: rgb(44, 44, 44);
+    }
+    .topDesigner{
+      background-color: $lightBg;
+    }
+    .header__menu_btn{
+      @media screen and (max-width: 800px)
+      {
+        background-color: #d3d3d3;
+        
+      }
+     }
+    
+   
+
+    
+  } @else {
+    .header h2{
+      color: white;
+    }
+    .comment{
+      background: #232323;
+    }
+    .topDesigner{
+      background: #232323;
+    }
+    .custom_tooltip{
+      background-color: white;
+    }
+    .header__menu_btn{
+      @media screen and (max-width: 800px)
+      {
+        background-color: #272727;
+        
+      }
+     }
+
+  }
+}
